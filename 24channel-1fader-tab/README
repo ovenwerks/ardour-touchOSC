@@ -1,0 +1,26 @@
+Instructions:
+
+turn on OSC in Ardour in perferences->ControlSurfaces
+open the settings GUI
+Set Port Mode to Manual, port of 8000 is fine
+Set Bank Size to 8
+Set Gain Mode to Position
+In the Default Strip Types tab:
+	check the top two lines for a Strip Types Value of 3.
+Back in the OSC Setup tab select the Clear OSC Devices button
+	(This is generally not needed, but if you have tried to send OSC messages from
+	your tablet before, this will clear anything remembered from that)
+
+Install TouchOSC on your tablet if it is not already installed.
+run/open touchOSC:
+set the ip address to the IP of the computer running Ardour
+set the send port to 3819
+set the receive port to 8000
+download the accompanying file to your tablet and find it with touchOSC and load it.
+it should display horizontally.
+In the bottom left corner touch the connect button.
+
+The first up to 24 track names should appear. There is no bank up/down in this case.
+busses and master are not shown. this map is mostly meant as a tape recorder controller
+style map.
+

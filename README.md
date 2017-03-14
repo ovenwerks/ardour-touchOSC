@@ -12,3 +12,10 @@ TouchOSC is available for either Android devices or iOS devices.
 
 Contributions are welcome, the author should include their name in
 the README file and maybe their irc nic.
+
+The TouchOSC map edit tool is available from https://hexler.net/software/touchosc
+look towards the bottom of the page. The noarch version works with Linux
+so long as the java runtime is installed on the system... in fact marking it executable
+means it can be run from the file manager. The created files are not human readable
+(unfortunately) so simple cut and paste for blocks of stuff is not possible with a text
+editor.

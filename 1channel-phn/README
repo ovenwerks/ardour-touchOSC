@@ -1,0 +1,63 @@
+Name: 1ch-phn
+Made for: Android or iOS phone
+Map by: Len Ovens
+
+Description:
+This map provides One channel of Ardour at a time similar to "FaderPort". This channel
+can be moved from channel to channel and includes tracks, busses, VCAs and Master. The
+Session name and smpte time are displayed at the top. Under the session name is the
+current track with:
+	Track name (also displays dB value for trim or level)
+	Trim
+	Level
+	Record Enable
+	Record Safe (blocks this track from recording)
+	Input Monitor
+	Disk Monitor
+	Signal indicator
+	Solo
+	Mute
+	Pan
+	Privious track
+	Next track
+Under the play head time display there are transport buttons for:
+	Connect (tells ardour to refresh this controller)
+	Record (master record enable)
+	Forget (stop transport and forget last take)
+	Zero (move transport to Zero and stop)
+	Stop
+	Play
+	FFWD (Fast Forward 1.5 first touch add 1.5 each touch till 8 times)
+	Rewind (same as FFWD but in reverse)
+
+Please see the image in this same folder.
+
+Instructions:
+
+turn on OSC in Ardour in perferences->ControlSurfaces
+open the settings GUI
+Set Port Mode to Manual, port of 8000 is fine (hit enter after setting)
+Set Bank Size to 1 (hit enter after setting)
+Set Gain Mode to Position
+In the Default Strip Types tab:
+	check all lines from the top to Master (there is no dedicated master strip)
+	The Strip Types Value will = 191 if this is correct.
+	(the user is free to ommit any of the tracks types from the list above)
+Back in the OSC Setup tab select the Clear OSC Devices button
+	(This is generally not needed, but if you have tried to send OSC messages from
+	your phone before, this will clear anything remembered from that)
+
+Install TouchOSC on your phone if it is not already installed.
+run/open touchOSC:
+set the ip address to the IP of the computer running Ardour
+set the send port to 3819
+set the receive port to 8000
+download the accompanying file to your tablet and find it with touchOSC and load it.
+it should display vertically.
+In the top right corner touch the connect button.
+
+The session name and playhead position should appear in the first line.
+The first track name should appear below that.
+
+Note: that controls that the track doesn't have will not work... busses and Master do not record
+
