@@ -1,2 +1,2 @@
 # ardour-touchOSC
-touchOSC maps for Ardour
+TouchOSC maps for Ardour
