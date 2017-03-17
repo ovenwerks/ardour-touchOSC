@@ -2,6 +2,13 @@ Name: 1ch-phn
 Made for: Android or iOS phone
 Map by: Len Ovens
 
+NOTE: There are two maps in this directory that look the same and on the phone end work the same.
+	However, 1ch-phn uses a 1 strip bank and uses bankup/down to move from one to the other, while
+	1ch-sel-phn keeps track of the currently selected channel and uses the select next/previous track
+	to move around. The first does not mess with tracks as selected in the GUI and the second would
+	allow the user to quickly go to a track using the GUI select. The downside to the select version
+	is that VCAs can not be selected so choose 1ch-phn if you wish to be able to control VCAs.
+
 Description:
 This map provides One channel of Ardour at a time similar to "FaderPort". This channel
 can be moved from channel to channel and includes tracks, busses, VCAs and Master. The
