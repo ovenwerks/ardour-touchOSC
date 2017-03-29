@@ -1,0 +1,56 @@
+Name: mon_trans_jmp-phn
+Name: mon_trans_scrb-phn
+Made for: Android or iOS phone
+Map by: Len Ovens
+
+NOTE: There are two maps in this directory that look the same and on the phone
+	end. However, they work differently. The jmp version was created for Ardour version
+	5.0 to 5.8 and will still work beyond that as well. The scrb version is for Ardour
+	5.9 and up.
+
+Description:
+This map provides a monitor and transport section for a phone.
+The session name and play head time are shown at the top.
+Under that the display is divided left and right. On the
+left side are monitor controls and a jog control. On the right
+are transport controls.
+
+The monitor controls only work with sessions that have the
+monitor section enabled. They include Mute, Dim, Mono and level.
+
+Below that is the jog wheel. On the jmp version, spinning the
+jog wheel clock wise moves the playhead forward with increments
+of 1 second (jumps). The problems with this are:
+	moving the jog wheel takes Ardour out of play mode.
+	Audio can not be heard while jogging.
+	The playhead will not go all the way to zero only the closest
+		fraction of a second.
+That is why there is a scrb version. This will work with the new
+OSC command /jog_wheel f offset. This will actually change the
+play speed to move the playhead forward or back.
+
+Please see the image in this same folder.
+
+Instructions:
+
+turn on OSC in Ardour in perferences->ControlSurfaces
+open the settings GUI
+Set Port Mode to Manual, port of 8000 is fine (hit enter after setting)
+Set Bank Size to 0 (hit enter after setting)
+Set Gain Mode to Position
+In the Default Strip Types tab deselect all check boxes
+Back in the OSC Setup tab select the Clear OSC Devices button
+	(This is generally not needed, but if you have tried to send OSC messages from
+	your phone before, this will clear anything remembered from that)
+
+Install TouchOSC on your phone if it is not already installed.
+run/open touchOSC:
+set the ip address to the IP of the computer running Ardour
+set the send port to 3819
+set the receive port to 8000
+download the accompanying file to your tablet and find it with touchOSC and load it.
+it should display vertically.
+In the top right corner touch the connect button.
+
+The session name and playhead position should appear in the first line
+indicating a successful connection.
