@@ -1,0 +1,53 @@
+Name: personal-phn
+Made for: Android or iOS phone
+Map by: Len Ovens
+
+
+Description:
+
+This map provides personal monitoing control for a performer using a phone.
+The performer can mix up to 8 souces for their own personal monitoring. It is
+expected that the engineer will set up Aux buses one for each monitor line
+probably named after the performer using that aux. Then add aux sends
+(prefader) in the sources of interest to the performer.
+
+Please see:
+http://manual.ardour.org/using-control-surfaces/controlling-ardour-with-osc/osc-personal-monitoring/
+
+This map is quite simple, There is a text box at the top that has the name
+of the aux bus in use. The master level and mute switch are on the right side
+and control the performer's listening level or mutes it. On the left are 8 pots
+to control the tracks assigned to this performer's aux. At the bottom left are
+two buttons, Previous and Next that allow the performer to cycle through the
+available aux buses.
+
+An engineer should feel free to edit this map to make individual maps for each
+monitor line with only one button that force selects that performer's aux.
+
+Please see the image in this same folder.
+
+Instructions:
+
+turn on OSC in Ardour in perferences->ControlSurfaces
+open the settings GUI
+Set Port Mode to Manual, port of 8000 is fine (hit enter after setting)
+Leave Bank Size at 0 (hit enter after setting)
+	Though any setting should be fine if another surface requires it
+Set Gain Mode to Position
+	Though again, it shouldn't matter if another surface needs something else
+	this map will work fine.
+In the Default Strip Types tab:
+	Use whatever is there.
+
+Install TouchOSC on your phone if it is not already installed.
+run/open touchOSC:
+set the ip address to the IP of the computer running Ardour
+set the send port to 3819
+set the receive port to 8000
+download the accompanying file to your tablet and find it with touchOSC and load it.
+it should display vertically.
+
+Either previous or next will connect the phone to ardour (so long as it is running)
+and will update the display with the first aux bus name at the top, the names of
+any tracks (up to 8) with sends to this bus and their current level as well as the
+output level and the mute status.
