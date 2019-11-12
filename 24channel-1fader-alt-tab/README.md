@@ -9,6 +9,8 @@ This layout is influenced by the original 24channel-1fader-tab.
 Fun fact: This layout is not designed with the TouchOSC layout editor,
 but programmatically generated.
 
+[Screenshot](24channel-1fader-alt-tab.png)
+
 Included is a preset file for Ardour5. Just put it in your
 `~/.config/ardour5/osc/` directory and restart Ardour. You can choose
 the preset from the OSC settings dialog. **Note** the preset uses
