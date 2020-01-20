@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OSCPreset>
+  <Name value="24 Channel, no master"/>
+  <PortMode value="1"/>
+  <Remote-Port value="8000"/>
+  <Bank-Size value="24"/>
+  <Send-Size value="0"/>
+  <Plugin-Size value="0"/>
+  <Strip-Types value="159"/>
+  <Feedback value="8927"/>
+  <Gain-Mode value="1"/>
+</OSCPreset>
